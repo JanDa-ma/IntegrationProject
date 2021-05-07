@@ -57,11 +57,15 @@
       <div id="columnOnkostInvoeren">
         <div class="onkostInvoerenItem">
           <ui5-label>Datum</ui5-label>
-          <ui5-date-picker id="myDatepicker1"></ui5-date-picker>
+          <ui5-date-picker
+            format-pattern="dd/MM/yyyy"
+            id="datumOnkostInvoeren"
+          ></ui5-date-picker>
         </div>
         <div class="onkostInvoerenItem">
           <ui5-label>Beschrijving</ui5-label>
           <ui5-textarea
+            id="onkostInvoerenBeschrijving"
             placeholder="Type some text"
             maxlength="255"
             show-exceeded-text
@@ -79,8 +83,8 @@
         </div>
         <div class="onkostInvoerenItem">
           <ui5-label>Onkostentype</ui5-label>
-          <ui5-select class="select">
-            <ui5-option value="null">--Kies een optie</ui5-option>
+          <ui5-select class="select" id="onkostenTypeInvoeren">
+            <ui5-option value="geenoptie">--Kies een optie</ui5-option>
             <ui5-option>Restautant</ui5-option>
             <ui5-option>Wagen</ui5-option>
             <ui5-option>Trein</ui5-option>
@@ -96,7 +100,7 @@
           <ui5-checkbox text="Factureren aan klant" checked></ui5-checkbox>
         </div>
         <div class="onkostInvoerenItem">
-          <ui5-button design="Emphasized" id="btnVoerOnkostIn"
+          <ui5-button design="Emphasized" id="btnVoerOnkostIn" disabled
             >Invoeren</ui5-button
           >
           <p id="errroNieuweOnkost"></p>
@@ -104,7 +108,7 @@
       </div>
     </div>
     <div id="tableOverischtEigenOverzicht">
-      <ui5-table class="demo-table">
+      <ui5-table class="demo-table" id="tableOnkosten">
         <!-- Columns -->
         <ui5-table-column slot="columns">
           <span style="line-height: 1.4rem">Datum</span>
