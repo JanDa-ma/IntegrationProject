@@ -1,0 +1,101 @@
+ID;datum;beschrijving;bankGegevens_ID;bedrag;valutaCode;facturerenAanKlant;status;OnkostenType_ID
+1;5/29/2020;Visionary dynamic instruction set;1;388.33;EUR;false;IN VERWERKING;2
+2;11/3/2020;Progressive web-enabled projection;1;135.93;EUR;true;IN VERWERKING;1
+3;8/29/2020;Decentralized intangible middleware;3;499.06;EUR;true;AFGEWEZEN;3
+4;5/25/2020;Switchable incremental interface;3;51.83;EUR;false;TOEGESTAAN;1
+5;10/3/2020;Virtual high-level strategy;4;147.57;EUR;true;AFGEWEZEN;6
+6;2/4/2021;Monitored 5th generation benchmark;4;412.77;EUR;true;IN VERWERKING;4
+7;1/19/2021;Digitized web-enabled collaboration;5;254.26;EUR;true;TOEGESTAAN;1
+8;7/3/2020;Organic eco-centric algorithm;6;212.75;EUR;true;AFGEWEZEN;2
+9;6/15/2020;Enhanced leading edge model;7;356.54;EUR;false;IN VERWERKING;4
+10;4/19/2021;Advanced background circuit;8;185.82;EUR;true;BETAALD;1
+11;12/21/2020;Reduced local info-mediaries;10;68.72;EUR;true;AFGEWEZEN;5
+12;3/19/2021;Integrated coherent alliance;11;420.36;EUR;true;TOEGESTAAN;4
+13;2/5/2021;Phased optimal hub;11;336.08;EUR;false;IN VERWERKING;5
+14;9/24/2020;Versatile 5th generation local area network;11;275.62;EUR;true;TOEGESTAAN;6
+15;5/8/2020;Re-engineered 3rd generation moderator;12;405.83;EUR;false;TOEGESTAAN;4
+16;12/28/2020;Face to face systematic adapter;13;409.72;EUR;true;IN VERWERKING;2
+17;3/7/2021;Grass-roots full-range portal;13;164.86;EUR;true;TOEGESTAAN;1
+18;2/23/2021;Grass-roots foreground success;14;180.1;EUR;false;TOEGESTAAN;3
+19;6/30/2020;Polarised even-keeled system engine;15;443.48;EUR;false;IN VERWERKING;2
+20;9/4/2020;Focused explicit definition;18;488.72;EUR;true;IN VERWERKING;4
+21;6/1/2020;OUSD-source didactic product;19;483.18;EUR;true;IN VERWERKING;5
+22;9/21/2020;Adaptive multimedia throughput;20;380.58;EUR;true;AFGEWEZEN;3
+23;12/9/2020;Versatile intangible encryption;20;177.69;EUR;false;IN VERWERKING;2
+24;9/9/2020;Profit-focused demand-driven forecast;21;148.77;USD;false;TOEGESTAAN;4
+25;10/24/2020;Customizable content-based customer loyalty;21;467.88;EUR;false;IN VERWERKING;2
+26;5/14/2020;Persistent zero administration middleware;22;196.64;EUR;true;IN VERWERKING;3
+27;4/29/2021;Public-key global info-mediaries;23;145.73;EUR;true;TOEGESTAAN;2
+28;9/7/2020;Front-line neutral help-desk;23;450.31;USD;false;TOEGESTAAN;1
+29;2/13/2021;Multi-channelled dynamic access;24;77.31;EUR;false;BETAALD;4
+30;1/31/2021;Devolved high-level concept;26;260.35;EUR;true;TOEGESTAAN;6
+31;8/1/2020;Public-key discrete archive;27;196.22;EUR;true;AFGEWEZEN; 5
+32;8/21/2020;Integrated heuristic function;28;368.92;EUR;true;IN VERWERKING;3
+33;10/22/2020;Down-sized fresh-thinking pricing structure;30;347.04;EUR;false;AFGEWEZEN;2
+34;11/10/2020;Face to face asymmetric capability;30;9.4;EUR;false;BETAALD;5
+35;12/22/2020;Horizontal bi-directional interface;32;234.09;EUR;false;BETAALD;4
+36;5/29/2020;Self-enabling incremental firmware;32;390.42;USD;false;IN VERWERKING;6
+37;10/9/2020;Configurable next generation encoding;33;43.08;EUR;true;IN VERWERKING;2
+38;1/29/2021;Up-sized mobile service-desk;34;352.19;EUR;true;AFGEWEZEN;5
+39;1/10/2021;Team-oriented responsive instruction set;35;175.74;USD;false;IN VERWERKING;3
+40;7/25/2020;Mandatory demand-driven oUSD system;36;389.08;EUR;false;IN VERWERKING;2
+41;7/11/2020;Focused multi-state archive;37;282.41;USD;true;IN VERWERKING;4
+42;4/23/2021;Up-sized even-keeled contingency;38;204.5;EUR;true;IN VERWERKING;2
+43;11/22/2020;Face to face mission-critical ability;39;124.64;EUR;false;IN VERWERKING;3
+44;2/3/2021;Focused coherent algorithm;40;462.62;EUR;true;IN VERWERKING;5
+45;10/6/2020;Exclusive modular solution;41;85.57;EUR;false;AFGEWEZEN; 6
+46;9/2/2020;Horizontal client-driven implementation;43;219.72;USD;true;TOEGESTAAN;2
+47;10/5/2020;Multi-tiered discrete project;44;158.51;USD;false;TOEGESTAAN;1
+48;9/10/2020;De-engineered zero tolerance contingency;45;393.11;EUR;false;BETAALD;3
+49;11/10/2020;Profit-focused 5th generation service-desk;45;208.41;EUR;true;TOEGESTAAN;3
+50;2/8/2021;Business-focused upward-trending archive;45;92.17;EUR;true;BETAALD;5
+51;10/15/2020;Seamless intermediate emulation;48;177.56;EUR;true;IN VERWERKING;1
+52;4/16/2021;Streamlined client-driven flexibility;49;361.1;USD;false;BETAALD;4
+53;6/10/2020;Stand-alone 4th generation neural-net;49;278.81;EUR;false;AFGEWEZEN;3
+54;5/29/2020;Future-proofed client-driven emulation;49;225.06;EUR;false;IN VERWERKING;5
+55;2/12/2021;Cross-platform background success;51;95.66;USD;true;TOEGESTAAN;1
+56;11/26/2020;OUSD-source eco-centric time-frame;52;315.39;USD;true;AFGEWEZEN;6
+57;1/27/2021;Progressive attitude-oriented conglomeration;53;127.69;EUR;true;IN VERWERKING;6
+58;12/24/2020;Centralized clear-thinking application;54;43.98;EUR;false;IN VERWERKING;6
+59;6/12/2020;Implemented asynchronous forecast;57;50.16;EUR;true;TOEGESTAAN;2
+60;5/28/2020;User-friendly background Graphical User Interface;58;78.72;EUR;false;BETAALD;1
+61;8/6/2020;Networked holistic frame;59;350.35;EUR;false;IN VERWERKING;5
+62;12/28/2020;Reactive impactful capability;59;376.1;EUR;false;IN VERWERKING;3
+63;5/13/2020;Customizable scalable alliance;60;283.75;USD;true;AFGEWEZEN;1
+64;11/16/2020;Robust stable pricing structure;60;414.04;EUR;true;TOEGESTAAN;3
+65;4/26/2021;Re-contextualized contextually-based conglomeration;60;367.82;EUR;true;IN VERWERKING;6
+66;10/6/2020;Customer-focused stable website;60;356.84;USD;true;IN VERWERKING;1
+67;3/18/2021;Reverse-engineered next generation array;61;333.9;EUR;false;TOEGESTAAN;2
+68;12/12/2020;Multi-lateral encompassing system engine;62;360.37;USD;true;BETAALD;4
+69;4/8/2021;Optional homogeneous project;64;81.61;EUR;false;IN VERWERKING;5
+70;5/19/2020;Persistent background parallelism;65;469.5;USD;true;TOEGESTAAN;5
+71;2/13/2021;Cross-platform didactic matrix;67;231.29;EUR;true;IN VERWERKING;1
+72;5/20/2020;Distributed even-keeled adapter;69;80.88;EUR;true;IN VERWERKING;1
+73;10/23/2020;Face to face exuding array;69;76.2;EUR;false;AFGEWEZEN;2
+74;8/27/2020;User-centric methodical frame;69;303.68;USD;false;IN VERWERKING;3
+75;11/21/2020;Universal system-worthy analyzer;69;436.44;EUR;true;TOEGESTAAN;4
+76;10/29/2020;Monitored optimal algorithm;70;448.59;EUR;true;IN VERWERKING;4
+77;1/7/2021;Public-key system-worthy core;73;200.26;EUR;true;TOEGESTAAN;3
+78;6/21/2020;Advanced mobile attitude;74;181.57;EUR;true;IN VERWERKING;2
+79;6/27/2020;Self-enabling methodical extranet;75;36.96;EUR;true;BETAALD;1
+80;1/31/2021;Configurable scalable productivity;77;131.56;EUR;false;IN VERWERKING;3
+81;12/6/2020;Future-proofed static policy;78;232.1;EUR;true;TOEGESTAAN;2
+82;9/9/2020;Persistent even-keeled frame;79;76.08;USD;true;IN VERWERKING;3
+83;4/20/2021;Ameliorated regional hub;80;301.18;EUR;false;TOEGESTAAN;4
+84;5/23/2020;Profound context-sensitive protocol;81;88.21;EUR;true;IN VERWERKING;5
+85;6/16/2020;Future-proofed modular archive;83;482.41;EUR;true;IN VERWERKING;1
+86;1/2/2021;User-friendly intangible contingency;85;452.74;EUR;false;BETAALD;6
+87;9/13/2020;Decentralized transitional pricing structure;85;449.52;USD;true;IN VERWERKING;2
+88;10/6/2020;Managed solution-oriented initiative;85;395.74;USD;false;TOEGESTAAN;3
+89;12/12/2020;Horizontal local functionalities;86;46.42;USD;false;BETAALD;1
+90;8/16/2020;Programmable executive superstructure;87;167.32;EUR;false;IN VERWERKING;5
+91;2/18/2021;Upgradable modular capacity;88;485.59;EUR;false;AFGEWEZEN;5
+92;9/19/2020;Profit-focused needs-based knowledge user;89;332.64;EUR;true;IN VERWERKING;2
+93;10/30/2020;Right-sized directional task-force;90;252.81;EUR;false;BETAALD;3
+94;1/8/2021;Automated contextually-based time-frame;92;130.79;USD;true;BETAALD;4
+95;7/1/2020;Centralized web-enabled initiative;93;57.73;USD;false;IN VERWERKING;3
+96;10/17/2020;Phased directional architecture;94;125.65;EUR;true;IN VERWERKING;6
+97;10/15/2020;Switchable stable encoding;95;334.16;EUR;false;BETAALD;6
+98;11/7/2020;Self-enabling coherent software;98;371.92;EUR;false;IN VERWERKING;2
+99;3/16/2021;Upgradable 24 hour pricing structure;99;269.39;EUR;true;IN VERWERKING;1
+100;12/31/2020;Optional composite leverage;100;266.08;USD;false;BETAALD;3
