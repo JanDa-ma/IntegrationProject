@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="user.css" />
+    <script
+      src="https://unpkg.com/@ui5/webcomponents/dist/Button?module"
+      type="module"
+    ></script>
+    <script
+      src="https://unpkg.com/@ui5/webcomponents/dist/Label?module"
+      type="module"
+    ></script>
+    <script
+      src="https://unpkg.com/@ui5/webcomponents/dist/Input?module"
+      type="module"
+    ></script>
+    <script
+      src="https://unpkg.com/@ui5/webcomponents/dist/Table?module"
+      type="module"
+    ></script>
+    <script
+      src="https://unpkg.com/@ui5/webcomponents/dist/TableCell?module"
+      type="module"
+    ></script>
+    <script
+      src="https://unpkg.com/@ui5/webcomponents/dist/TableColumn?module"
+      type="module"
+    ></script>
+    <script
+      src="https://unpkg.com/@ui5/webcomponents/dist/TableRow?module"
+      type="module"
+    ></script>
+    <script
+      src="https://unpkg.com/@ui5/webcomponents/dist/DatePicker?module"
+      type="module"
+    ></script>
+    <script
+      src="https://unpkg.com/@ui5/webcomponents/dist/TextArea?module"
+      type="module"
+    ></script>
+    <script
+      src="https://unpkg.com/@ui5/webcomponents/dist/CheckBox?module"
+      type="module"
+    ></script>
+    <script
+      src="https://unpkg.com/@ui5/webcomponents/dist/Select?module"
+      type="module"
+    ></script>
+    <script
+      src="https://unpkg.com/@ui5/webcomponents/dist/Button?module"
+      type="module"
+    ></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div id="onkostenInvoeren">
+      <div id="columnOnkostInvoeren">
+        <div class="onkostInvoerenItem">
+          <ui5-label>Datum</ui5-label>
+          <ui5-date-picker id="myDatepicker1"></ui5-date-picker>
+        </div>
+        <div class="onkostInvoerenItem">
+          <ui5-label>Beschrijving</ui5-label>
+          <ui5-textarea
+            placeholder="Type some text"
+            maxlength="255"
+            show-exceeded-text
+          ></ui5-textarea>
+        </div>
+      </div>
+      <div id="columnOnkostInvoeren">
+        <div class="onkostInvoerenItem">
+          <ui5-label>Bedrag</ui5-label>
+          <ui5-input
+            placeholder="Bedrag in €"
+            type="Number"
+            id="onkostInvoerenBedrag"
+          ></ui5-input>
+        </div>
+        <div class="onkostInvoerenItem">
+          <ui5-label>Onkostentype</ui5-label>
+          <ui5-select class="select">
+            <ui5-option value="null">--Kies een optie</ui5-option>
+            <ui5-option>Restautant</ui5-option>
+            <ui5-option>Wagen</ui5-option>
+            <ui5-option>Trein</ui5-option>
+            <ui5-option>Zakenreis</ui5-option>
+            <ui5-option>Computer</ui5-option>
+            <ui5-option>Telefoon</ui5-option>
+            <ui5-option>Tankkaart</ui5-option>
+          </ui5-select>
+        </div>
+      </div>
+      <div id="columnOnkostInvoeren">
+        <div class="onkostInvoerenItem">
+          <ui5-checkbox text="Factureren aan klant" checked></ui5-checkbox>
+        </div>
+        <div class="onkostInvoerenItem">
+          <ui5-button design="Emphasized" id="btnVoerOnkostIn"
+            >Invoeren</ui5-button
+          >
+          <p id="errroNieuweOnkost"></p>
+        </div>
+      </div>
+    </div>
+    <div id="tableOverischtEigenOverzicht">
+      <ui5-table class="demo-table">
+        <!-- Columns -->
+        <ui5-table-column slot="columns">
+          <span style="line-height: 1.4rem">Datum</span>
+        </ui5-table-column>
+        <ui5-table-column slot="columns">
+          <span style="line-height: 1.4rem">Bedrag</span>
+        </ui5-table-column>
+        <ui5-table-column slot="columns">
+          <span style="line-height: 1.4rem">Onkostentype</span>
+        </ui5-table-column>
+        <ui5-table-column slot="columns">
+          <span style="line-height: 1.4rem">Status</span>
+        </ui5-table-column>
+        <ui5-table-row>
+          <ui5-table-cell>
+            <ui5-label>07/05/2021</ui5-label>
+          </ui5-table-cell>
+          <ui5-table-cell>
+            <ui5-label>€ 512</ui5-label>
+          </ui5-table-cell>
+          <ui5-table-cell>
+            <ui5-label>Wagen</ui5-label>
+          </ui5-table-cell>
+          <ui5-table-cell>
+            <ui5-label class="color-orange">Wachten op goedkeuring</ui5-label>
+          </ui5-table-cell>
+        </ui5-table-row>
+        <ui5-table-row>
+          <ui5-table-cell>
+            <ui5-label>21/02/2021</ui5-label>
+          </ui5-table-cell>
+          <ui5-table-cell>
+            <ui5-label>€ 52</ui5-label>
+          </ui5-table-cell>
+          <ui5-table-cell>
+            <ui5-label>Treinrit</ui5-label>
+          </ui5-table-cell>
+          <ui5-table-cell>
+            <ui5-label class="color-blue">Wachten op betaling</ui5-label>
+          </ui5-table-cell>
+        </ui5-table-row>
+        <ui5-table-row>
+          <ui5-table-cell>
+            <ui5-label>25/01/2021</ui5-label>
+          </ui5-table-cell>
+          <ui5-table-cell>
+            <ui5-label>€ 5645</ui5-label>
+          </ui5-table-cell>
+          <ui5-table-cell>
+            <ui5-label>Zakenreis</ui5-label>
+          </ui5-table-cell>
+          <ui5-table-cell>
+            <ui5-label class="color-green">Betaald</ui5-label>
+          </ui5-table-cell>
+        </ui5-table-row>
+        <ui5-table-row>
+          <ui5-table-cell>
+            <ui5-label>09/12/2020</ui5-label>
+          </ui5-table-cell>
+          <ui5-table-cell>
+            <ui5-label>€ 652</ui5-label>
+          </ui5-table-cell>
+          <ui5-table-cell>
+            <ui5-label>Computer</ui5-label>
+          </ui5-table-cell>
+          <ui5-table-cell>
+            <ui5-label class="color-green">Betaald</ui5-label>
+          </ui5-table-cell>
+        </ui5-table-row>
+        <ui5-table-row>
+          <ui5-table-cell>
+            <ui5-label>18/11/2020</ui5-label>
+          </ui5-table-cell>
+          <ui5-table-cell>
+            <ui5-label>€ 125</ui5-label>
+          </ui5-table-cell>
+          <ui5-table-cell>
+            <ui5-label>Telefoon</ui5-label>
+          </ui5-table-cell>
+          <ui5-table-cell>
+            <ui5-label class="color-red">Geweigerd</ui5-label>
+          </ui5-table-cell>
+        </ui5-table-row>
+        <ui5-table-row>
+          <ui5-table-cell>
+            <ui5-label>15/10/2020</ui5-label>
+          </ui5-table-cell>
+          <ui5-table-cell>
+            <ui5-label>€ 63</ui5-label>
+          </ui5-table-cell>
+          <ui5-table-cell>
+            <ui5-label>Tankkaart</ui5-label>
+          </ui5-table-cell>
+          <ui5-table-cell>
+            <ui5-label class="color-green">Betaald</ui5-label>
+          </ui5-table-cell>
+        </ui5-table-row>
+      </ui5-table>
+    </div>
+    <script src="user.js"></script>
+  </body>
+</html>

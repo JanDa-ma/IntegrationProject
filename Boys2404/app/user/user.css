@@ -1,0 +1,48 @@
+#tableOverischtEigenOverzicht {
+  margin: 0 auto;
+
+  width: 50%;
+}
+body {
+  margin: 0 auto;
+  width: 100%;
+}
+.color-green {
+  background-color: green;
+  color: white;
+  padding: 10px;
+  width: 50%;
+}
+.color-red {
+  background-color: red;
+  color: white;
+  padding: 10px;
+  width: 50%;
+}
+.color-blue {
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  width: 50%;
+}
+.color-orange {
+  background-color: orange;
+  color: white;
+  padding: 10px;
+  width: 50%;
+}
+.onkostInvoerenItem {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#onkostenInvoeren {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 50%;
+  flex-direction: row;
+}
+#errroNieuweOnkost {
+  color: red;
+}
