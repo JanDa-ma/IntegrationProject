@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="admin.css" />
+    <script
+      src="https://unpkg.com/@ui5/webcomponents/dist/Card?module"
+      type="module"
+    ></script>
+    <script
+      src="https://unpkg.com/@ui5/webcomponents/dist/List?module"
+      type="module"
+    ></script>
+    <script
+      src="https://unpkg.com/@ui5/webcomponents/dist/GroupHeaderListItem?module"
+      type="module"
+    ></script>
+    <script
+      src="https://unpkg.com/@ui5/webcomponents/dist/ListItem?module"
+      type="module"
+    ></script>
+    <script
+      src="https://unpkg.com/@ui5/webcomponents/dist/CustomListItem?module"
+      type="module"
+    ></script>
+    <script
+      src="https://unpkg.com/@ui5/webcomponents/dist/ListItemBase?module"
+      type="module"
+    ></script>
+    <script
+      src="https://unpkg.com/@ui5/webcomponents/dist/StandardListItem?module"
+      type="module"
+    ></script>
+    <script
+      src="https://unpkg.com/@ui5/webcomponents/dist/SuggestionListItem?module"
+      type="module"
+    ></script>
+    <script
+      src="https://unpkg.com/@ui5/webcomponents/dist/Label?module"
+      type="module"
+    ></script>
+    <script
+      src="https://unpkg.com/@ui5/webcomponents/dist/Column?module"
+      type="module"
+    ></script>
+    <script
+      src="https://unpkg.com/@ui5/webcomponents/dist/TableColumn?module"
+      type="module"
+    ></script>
+    <script
+      src="https://unpkg.com/@ui5/webcomponents/dist/TableCell?module"
+      type="module"
+    ></script>
+    <script
+      src="https://unpkg.com/@ui5/webcomponents/dist/TableRow?module"
+      type="module"
+    ></script>
+    <script
+      src="https://unpkg.com/@ui5/webcomponents/dist/Column?module"
+      type="module"
+    ></script>
+    <script
+      src="https://unpkg.com/@ui5/webcomponents/dist/Checkbox?module"
+      type="module"
+    ></script>
+  </head>
+  <body>
+    <ui5-card
+      avatar="group"
+      heading="Bedrijven"
+      class="medium"
+      id="cardBedrijven"
+    >
+      <div class="card-content">
+        <ui5-list
+          separators="None"
+          class="card-content-child"
+          style="width: 100%"
+        >
+          <ui5-li
+            onclick="Odisee()"
+            image="pictures/Odisee.png"
+            description="Hogeschool"
+            >Odisee</ui5-li
+          >
+          <ui5-li
+            onclick="Flexso()"
+            image="pictures/Flexso.png"
+            description="Bedrijf"
+            >Flexso</ui5-li
+          >
+          <ui5-li
+            onclick="Meetup()"
+            image="pictures/Meetup.png"
+            description="Bedrijf"
+            >Meetup</ui5-li
+          >
+        </ui5-list>
+      </div>
+    </ui5-card>
+    <ui5-card
+      avatar="group"
+      heading="Medewerkers"
+      class="medium"
+      id="cardMedewerkersOdisee"
+      style="display: none"
+    >
+      <div class="card-content">
+        <ui5-list
+          separators="None"
+          class="card-content-child"
+          style="width: 100%"
+        >
+          <ui5-li
+            onclick="ToonOnkosten()"
+            image="pictures/Odisee.png"
+            description="IBAN : BE9425828365787"
+            >Jan Dammans</ui5-li
+          >
+          <ui5-li
+            onclick="ToonOnkosten()"
+            image="pictures/Odisee.png"
+            description="IBAN : BE9475821064752"
+            >Jhon Jhonnson</ui5-li
+          >
+          <ui5-li
+            onclick="ToonOnkosten()"
+            image="pictures/Odisee.png"
+            description="IBAN : BE2575721854758"
+            >Willy Neasens</ui5-li
+          >
+        </ui5-list>
+      </div>
+    </ui5-card>
+    <ui5-card
+      avatar="group"
+      heading="Medewerkers"
+      class="medium"
+      id="cardMedewerkersFlexso"
+      style="display: none"
+    >
+      <div class="card-content">
+        <ui5-list
+          separators="None"
+          class="card-content-child"
+          style="width: 100%"
+        >
+          <ui5-li
+            onclick="ToonOnkosten()"
+            image="pictures/Flexso.png"
+            description="IBAN : BE7485822364982"
+            >Marc Bosmans</ui5-li
+          >
+          <ui5-li
+            onclick="ToonOnkosten()"
+            image="pictures/Flexso.png"
+            description="IBAN : BE9475821078456"
+            >Lander Buist</ui5-li
+          >
+        </ui5-list>
+      </div>
+    </ui5-card>
+    <ui5-card
+      avatar="group"
+      heading="Medewerkers"
+      class="medium"
+      id="cardMedewerkersMeetup"
+      style="display: none"
+    >
+      <div class="card-content">
+        <ui5-list
+          separators="None"
+          class="card-content-child"
+          style="width: 100%"
+        >
+          <ui5-li
+            onclick="ToonOnkosten()"
+            image="pictures/Meetup.png"
+            description="IBAN : BE6611821064722"
+            >Jan Dammans</ui5-li
+          >
+          <ui5-li
+            onclick="ToonOnkosten()"
+            image="pictures/Meetup.png"
+            description="IBAN : BE5474421066659"
+            >Iejan Massart</ui5-li
+          >
+        </ui5-list>
+      </div>
+    </ui5-card>
+    <ui5-card
+      heading="Onkosten"
+      class="medium"
+      id="cardOnkosten"
+      style="display: none"
+    >
+      <ui5-table class="demo-table content-padding">
+        <!-- Columns -->
+        <ui5-table-column slot="columns">
+          <ui5-label>Beschrijving</ui5-label>
+        </ui5-table-column>
+
+        <ui5-table-column slot="columns">
+          <ui5-label>Bedrag</ui5-label>
+        </ui5-table-column>
+
+        <ui5-table-column slot="columns">
+          <ui5-label>Datum</ui5-label>
+        </ui5-table-column>
+
+        <ui5-table-column slot="columns">
+          <ui5-label>Factureren aan klant</ui5-label>
+        </ui5-table-column>
+
+        <ui5-table-column
+          slot="columns"
+          min-width="450"
+          popin-text="Status"
+          demand-popin
+        >
+          <ui5-label>Status</ui5-label>
+        </ui5-table-column>
+
+        <!-- Rows -->
+        <ui5-table-row>
+          <ui5-table-cell>
+            <ui5-label>Koffie machine</ui5-label>
+          </ui5-table-cell>
+          <ui5-table-cell>
+            <ui5-label>€ 512</ui5-label>
+          </ui5-table-cell>
+          <ui5-table-cell>
+            <ui5-label>20/05/2001</ui5-label>
+          </ui5-table-cell>
+          <ui5-table-cell>
+            <ui5-checkbox checked readonly></ui5-checkbox>
+          </ui5-table-cell>
+          <ui5-table-cell>
+            <span class="status-error">Rejected</span>
+          </ui5-table-cell>
+        </ui5-table-row>
+      </ui5-table>
+    </ui5-card>
+    <script src="admin.js"></script>
+  </body>
+</html>
