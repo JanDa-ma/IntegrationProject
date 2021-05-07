@@ -17,6 +17,10 @@
       src="https://unpkg.com/@ui5/webcomponents/dist/Input?module"
       type="module"
     ></script>
+    <script
+      src="https://unpkg.com/@ui5/webcomponents/dist/Dialog?module"
+      type="module"
+    ></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
@@ -32,10 +36,12 @@
 
     <div>
       <ui5-label for="password" required>Password: </ui5-label>
-      <ui5-input id="password" type="Password" value-state="Error"></ui5-input>
+      <ui5-input id="password" type="Password"></ui5-input>
     </div>
     <ui5-button onclick="Inloggen()">Inloggen</ui5-button>
+    <ui5-dialog id="dialog" header-text="FOUT">
+      <label>Foutieve combinatie </label>
+    </ui5-dialog>
     <script src="./js/index.js"></script>
-    <script src="./js/test.js"></script>
   </body>
 </html>

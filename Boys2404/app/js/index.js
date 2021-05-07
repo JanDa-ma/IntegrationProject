@@ -7,11 +7,16 @@ function zegHalloTegenSap() {
   window.location.href = "admin/OnkostenType?$top=11";
 }
 function Inloggen() {
-  username = document.getElementById("username").textContent;
-  password = document.getElementById("password").textContent;
+  username = document.getElementById("username").value;
+  password = document.getElementById("password").value;
+  dialog = document.getElementById("dialog");
+  console.log(username);
+  console.log(password);
   if (username && password == "admin") {
     window.location.href = "admin/admin.html";
   } else if (username && password == "user") {
     window.location.href = "user/user.html";
+  } else {
+    dialog.open();
   }
 }
