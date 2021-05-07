@@ -1,3 +1,7 @@
-ID;beschrijving
-201;4
-202;4
+ID;naam
+1;internetkosten
+2;telewerk kosten
+3;parkeerkosten
+4;etenskosten
+5;kilometervergoeding
+6;overige kosten
