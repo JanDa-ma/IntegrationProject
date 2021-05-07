@@ -1,8 +1,22 @@
-sap.ui.define([
+function zegHalloTegenSap() {
+  alert("Werkt nog niet");
 
-], function () {
-	"use strict";
-
-
-	alert("UI5 is ready");
-});
+  let db = new sqlite3.Database("../../onkostendb.db");
+  consolelog("db");
+  consolelog(db);
+  window.location.href = "admin/OnkostenType?$top=11";
+}
+function Inloggen() {
+  username = document.getElementById("username").value;
+  password = document.getElementById("password").value;
+  dialog = document.getElementById("dialog");
+  console.log(username);
+  console.log(password);
+  if (username && password == "admin") {
+    window.location.href = "admin/admin.html";
+  } else if (username && password == "user") {
+    window.location.href = "user/user.html";
+  } else {
+    dialog.open();
+  }
+}

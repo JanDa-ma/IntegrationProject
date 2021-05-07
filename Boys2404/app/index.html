@@ -1,24 +1,47 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <script
-		id="sap-ui-bootstrap"
-		src="https://openui5.hana.ondemand.com/resources/sap-ui-core.js"
-		data-sap-ui-theme="sap_belize"
-		data-sap-ui-libs="sap.m"
-		data-sap-ui-compatVersion="chrome"
-        data-sap-ui-async="true"
-        data-sap-ui-resourceroots='{
-			"sap.capire.Onkosten": "js/"
-		}'>
+      src="https://unpkg.com/@ui5/webcomponents/dist/Button?module"
+      type="module"
+    ></script>
+    <script
+      src="https://unpkg.com/@ui5/webcomponents/dist/Label?module"
+      type="module"
+    ></script>
+    <script
+      src="https://unpkg.com/@ui5/webcomponents/dist/Title?module"
+      type="module"
+    ></script>
+    <script
+      src="https://unpkg.com/@ui5/webcomponents/dist/Input?module"
+      type="module"
+    ></script>
+    <script
+      src="https://unpkg.com/@ui5/webcomponents/dist/Dialog?module"
+      type="module"
+    ></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <ui5-title level="H1">Login</ui5-title>
+    <ui5-label
+      >Welkom op de login pagina van de onkostenapplicatie. Gelieve alle velden
+      in te vullen.</ui5-label
+    >
+    <div>
+      <ui5-label for="username" required>Username: </ui5-label>
+      <ui5-input id="username"></ui5-input>
+    </div>
 
-	</script>
-<body onload="alertBoy()">
-    <main>
-        <p>you gay</p>
-    </main>
-
-    <!--<script src="js/index.js"></script>-->
-</body>
-</head>
+    <div>
+      <ui5-label for="password" required>Password: </ui5-label>
+      <ui5-input id="password" type="Password"></ui5-input>
+    </div>
+    <ui5-button onclick="Inloggen()">Inloggen</ui5-button>
+    <ui5-dialog id="dialog" header-text="FOUT">
+      <label>Foutieve combinatie </label>
+    </ui5-dialog>
+    <script src="./js/index.js"></script>
+  </body>
 </html>
