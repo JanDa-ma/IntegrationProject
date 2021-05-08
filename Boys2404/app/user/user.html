@@ -46,10 +46,6 @@
       src="https://unpkg.com/@ui5/webcomponents/dist/Select?module"
       type="module"
     ></script>
-    <script
-      src="https://unpkg.com/@ui5/webcomponents/dist/Button?module"
-      type="module"
-    ></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
@@ -122,7 +118,10 @@
         <ui5-table-column slot="columns">
           <span style="line-height: 1.4rem">Status</span>
         </ui5-table-column>
-        <ui5-table-row>
+        <ui5-table-column slot="columns">
+          <span style="line-height: 1.4rem">Actie</span>
+        </ui5-table-column>
+        <ui5-table-row id="onkost1">
           <ui5-table-cell>
             <ui5-label>07/05/2021</ui5-label>
           </ui5-table-cell>
@@ -135,8 +134,13 @@
           <ui5-table-cell>
             <ui5-label class="color-orange">Wachten op goedkeuring</ui5-label>
           </ui5-table-cell>
+          <ui5-table-cell>
+            <ui5-button design="Negative" class="btnVerwijder"
+              >Verwijder</ui5-button
+            >
+          </ui5-table-cell>
         </ui5-table-row>
-        <ui5-table-row>
+        <ui5-table-row id="onkost2">
           <ui5-table-cell>
             <ui5-label>21/02/2021</ui5-label>
           </ui5-table-cell>
@@ -149,8 +153,13 @@
           <ui5-table-cell>
             <ui5-label class="color-blue">Wachten op betaling</ui5-label>
           </ui5-table-cell>
+          <ui5-table-cell>
+            <ui5-button design="Negative" class="btnVerwijder"
+              >Verwijder</ui5-button
+            >
+          </ui5-table-cell>
         </ui5-table-row>
-        <ui5-table-row>
+        <ui5-table-row id="onkost3">
           <ui5-table-cell>
             <ui5-label>25/01/2021</ui5-label>
           </ui5-table-cell>
@@ -163,8 +172,13 @@
           <ui5-table-cell>
             <ui5-label class="color-green">Betaald</ui5-label>
           </ui5-table-cell>
+          <ui5-table-cell>
+            <ui5-button design="Negative" class="btnVerwijder"
+              >Verwijder</ui5-button
+            >
+          </ui5-table-cell>
         </ui5-table-row>
-        <ui5-table-row>
+        <ui5-table-row id="onkost4">
           <ui5-table-cell>
             <ui5-label>09/12/2020</ui5-label>
           </ui5-table-cell>
@@ -177,8 +191,13 @@
           <ui5-table-cell>
             <ui5-label class="color-green">Betaald</ui5-label>
           </ui5-table-cell>
+          <ui5-table-cell>
+            <ui5-button design="Negative" class="btnVerwijder"
+              >Verwijder</ui5-button
+            >
+          </ui5-table-cell>
         </ui5-table-row>
-        <ui5-table-row>
+        <ui5-table-row id="onkost5">
           <ui5-table-cell>
             <ui5-label>18/11/2020</ui5-label>
           </ui5-table-cell>
@@ -191,8 +210,13 @@
           <ui5-table-cell>
             <ui5-label class="color-red">Geweigerd</ui5-label>
           </ui5-table-cell>
+          <ui5-table-cell>
+            <ui5-button design="Negative" class="btnVerwijder"
+              >Verwijder</ui5-button
+            >
+          </ui5-table-cell>
         </ui5-table-row>
-        <ui5-table-row>
+        <ui5-table-row id="onkost6">
           <ui5-table-cell>
             <ui5-label>15/10/2020</ui5-label>
           </ui5-table-cell>
@@ -204,6 +228,11 @@
           </ui5-table-cell>
           <ui5-table-cell>
             <ui5-label class="color-green">Betaald</ui5-label>
+          </ui5-table-cell>
+          <ui5-table-cell>
+            <ui5-button design="Negative" class="btnVerwijder"
+              >Verwijder</ui5-button
+            >
           </ui5-table-cell>
         </ui5-table-row>
       </ui5-table>

@@ -104,6 +104,7 @@ btnVoerOnkostIn.addEventListener("click", function () {
   let cellBedrag = document.createElement("ui5-table-cell");
   let cellType = document.createElement("ui5-table-cell");
   let cellStatus = document.createElement("ui5-table-cell");
+  let cellDelete = document.createElement("ui5-button");
 
   //Add values
   cellDatum.innerHTML = datumOnkostInvoeren.value;
@@ -115,12 +116,15 @@ btnVoerOnkostIn.addEventListener("click", function () {
   });
   cellStatus.innerHTML =
     "<ui5-label class='color-orange'>Wachten op goedkeuring</ui5-label>";
+  cellDelete.innerHTML = "Verwijder";
+  cellDelete.classList.add("btnVerwijder");
 
   //Add cell to row
   row.appendChild(cellDatum);
   row.appendChild(cellBedrag);
   row.appendChild(cellType);
   row.appendChild(cellStatus);
+  row.appendChild(cellDelete);
   //Add row to table
   document
     .getElementById("tableOnkosten")
@@ -143,4 +147,20 @@ btnVoerOnkostIn.addEventListener("click", function () {
     index++;
   });
   onkostInvoerenBeschrijving.value = "";
+  DeleteFunction();
 });
+
+document.querySelectorAll(".btnVerwijder").forEach((element) => {
+  console.log(element);
+  element.addEventListener("click", function () {
+    console.log(element.parentNode.parentNode.remove());
+  });
+});
+function DeleteFunction() {
+  document.querySelectorAll(".btnVerwijder").forEach((element) => {
+    console.log(element);
+    element.addEventListener("click", function () {
+      element.parentNode.remove();
+    });
+  });
+}

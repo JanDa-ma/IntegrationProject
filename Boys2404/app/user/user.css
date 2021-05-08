@@ -46,3 +46,8 @@ body {
 #errroNieuweOnkost {
   color: red;
 }
+.btnVerwijder {
+  background-color: white;
+  color: red;
+  border-color: red;
+}
