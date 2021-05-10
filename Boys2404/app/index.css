@@ -1,0 +1,18 @@
+ui5-title {
+  padding-top: 20rem;
+  padding-left: 45rem;
+  padding-bottom: 1rem;
+}
+ui5-label {
+  padding-left: 45rem;
+  padding-bottom: 1rem;
+}
+ui5-button {
+  margin-left: 45rem;
+}
+ui5-dialog {
+  padding-left: 45rem;
+}
+#dialog {
+  padding-left: 0rem;
+}

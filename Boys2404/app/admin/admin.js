@@ -30,6 +30,18 @@ function Meetup() {
 }
 function ToonOnkosten() {
   cardOnkosten = document.getElementById("cardOnkosten");
+  let status = document.getElementById("status");
+  status.innerHTML = "Pending";
+  status.className = "status-warning";
   cardOnkosten.style = "display: inline-block;";
-  console.log("onkosten");
+}
+function Keuren(i) {
+  let status = document.getElementById("status");
+  if (i == 1) {
+    status.innerHTML = "Aproved";
+    status.className = "status-success";
+  } else {
+    status.innerHTML = "Rejected";
+    status.className = "status-error";
+  }
 }
