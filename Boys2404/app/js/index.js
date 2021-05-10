@@ -12,9 +12,9 @@ function Inloggen() {
   dialog = document.getElementById("dialog");
   console.log(username);
   console.log(password);
-  if (username && password == "admin") {
+  if (username == "admin" && password == "admin") {
     window.location.href = "admin/admin.html";
-  } else if (username && password == "user") {
+  } else if (username == "user" && password == "user") {
     window.location.href = "user/user.html";
   } else {
     dialog.open();
